@@ -5587,13 +5587,7 @@ html[lang="de"] #ss-cb-usb {
   margin: 1em 0;
   text-align: center;
 }
-.dropdown {
-  background: #f7f7f7;
-  border-color: #eee;
-  font-size: 1.1em;
-  margin-bottom: 1em;
-  max-width: 270px;
-}
+
 #online-content {
   width: 75%;
   margin: 0 auto;
