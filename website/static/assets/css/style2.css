@@ -27,6 +27,38 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
 }
 
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background: #5b71ff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  transition: all 0.4s;
+}
+
+.back-to-top i {
+  font-size: 28px;
+  color: #fff;
+  line-height: 0;
+}
+
+.back-to-top:hover {
+  background: #2744ff;
+  color: #fff;
+}
+
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
 
 /*--------------------------------------------------------------
 # Disable AOS delay on mobile
@@ -105,7 +137,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 5px 15px 7px 15px;
   margin-left: 5px;
   font-size: 14px;
-  color: rgb(255, 255, 255);
+  color: #fff;
   white-space: nowrap;
   transition: 0.3s;
   border-radius: 50px;
@@ -131,7 +163,7 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 99;
   opacity: 0;
   visibility: hidden;
-  background: rgb(0, 0, 0);
+  background: #fff;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   transition: 0.3s;
   border-radius: 15px;
@@ -153,7 +185,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
-  color: rgb(0, 0, 0);
+  color: #fff;
 }
 
 .navbar .dropdown:hover > ul {
@@ -188,7 +220,7 @@ h1, h2, h3, h4, h5, h6 {
 * Mobile Navigation 
 */
 .mobile-nav-toggle {
-  color: rgb(0, 0, 0);
+  color: #fff;
   font-size: 28px;
   cursor: pointer;
   display: none;
@@ -232,7 +264,7 @@ h1, h2, h3, h4, h5, h6 {
   left: 15px;
   padding: 10px 0;
   border-radius: 10px;
-  background-color: rgb(0, 0, 0);
+  background-color: #fff;
   overflow-y: auto;
   transition: 0.3s;
 }
@@ -260,7 +292,7 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 99;
   opacity: 1;
   visibility: visible;
-  background: rgb(0, 0, 0);
+  background: #fff;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
 }
 
@@ -277,7 +309,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-mobile .dropdown ul a:hover, .navbar-mobile .dropdown ul .active:hover, .navbar-mobile .dropdown ul li:hover > a {
-  color: rgb(0, 0, 0);
+  color: #fff;
 }
 
 .navbar-mobile .dropdown > .dropdown-active {
@@ -987,4 +1019,24 @@ section {
 
 #footer .credits {
   font-size: 13px;
+}
+
+.button {
+  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+  background-color: #07244F; 
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: Molengo; font-size: 25px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 35.7143px;
+  border-radius: 30px;
+}
+
+.text-box{
+  width:90%;
 }
