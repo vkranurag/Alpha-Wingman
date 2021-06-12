@@ -1,18 +1,110 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Flask App - Output data on same page after form submit</title>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Grammar Checker</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{{ url_for('static', filename='assets/vendor/animate.css/animate.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='assets/vendor/aos/aos.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='assets/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='assets/vendor/boxicons/css/boxicons.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='assets/vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='assets/vendor/remixicon/remixicon.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='assets/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{{ url_for('static', filename='assets/css/style2.css') }}" rel="stylesheet">
+  <style>
+      .content 
+      {
+        max-height: 100%;
+        text-align: center;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+      }
+    textarea
+    {
+	width: 500px;	
+	border: none;
+	border-radius: 20px;
+	outline: none;
+	padding: 10px;
+	font-family: 'Sniglet', cursive;
+	font-size: 1em;
+	color: #676767;
+	transition: border 0.5s;
+	-webkit-transition: border 0.5s;
+	-moz-transition: border 0.5s;
+	-o-transition: border 0.5s;
+	border: solid 3px #98d4f3;	
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	
+    }
+    textarea:focus
+    {
+	border: solid 3px #77bde0;	
+    }
+
+  </style>
+
 </head>
 <body>
+        <!-- ======= Header ======= -->
+        <header id="header" class="fixed-top d-flex align-items-center  header-transparent ">
+            <div class="container d-flex align-items-center justify-content-between">
 
+            <div class="logo">
+                <h1><a href="/">Selecao</a></h1>
+                <!-- Uncomment below if you prefer to use an image logo -->
+
+            </div>
+
+            <nav id="navbar" class="navbar">
+                <ul>
+                <li><a class="nav-link scrollto" href="/">Home</a></li>
+                <li><a class="nav-link scrollto" href="/#about">About</a></li>
+                <li class="dropdown"><a href="/#features"><span>Features</span><i class="bi bi-chevron-down"></i></a>
+                    <ul>
+                    <li><a href="/summary">Summarizer</a></li>
+                    <li><a href="/stt">Speech To Text</a></li>
+                    <li><a href="/grammarcheck">Grammar Checker</a></li>
+                    </ul>
+                </li>       
+                <li><a class="nav-link scrollto" href="/#team">Team</a></li>
+                <li><a class="nav-link scrollto" href="/#contact">Contact</a></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav><!-- .navbar -->
+
+            </div>
+        </header><!-- End Header -->
+
+        <br><br><br><br>
+    <div class="content">
+        
     <form method=post enctype=multipart/form-data >
-    <textarea name="text"></textarea>
-    <input type="submit" value="Submit" id="search_form_input">
-    </form>
-
-
-    <div id="morse" class="info">nothing received yet</div>
+    
+    <textarea name="text" placeholder="Type your text..."></textarea>
+    <br>
+    <input class="btn btn-primary" type="submit" value="Check">
+    </form><br>
     <p>{{ result }}</p>
+
+    </div>
 
 
 <!-- this is where is need my data -->

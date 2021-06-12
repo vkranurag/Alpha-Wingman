@@ -14,11 +14,6 @@ def summary():
 def speechtotext():
     return render_template("speech-to-text.html")
 
-@views.route('/howitworks')
-def how_it_works():
-    return render_template("howitworks.html")
-
-
 @views.route('/grammarcheck')
 def grammarcheck():
     return render_template("grammarcheck.html")
@@ -31,9 +26,6 @@ def streambyte():
 
     return render_template('grammarcheck.html', result = grammar(text))
 
-@views.route('/aboutus')
-def about_us():
-    return render_template("aboutus.html")
 
 @views.route('/results', methods=['GET', 'POST'])
 def results():
@@ -182,4 +174,4 @@ def grammar(text):
     from gingerit.gingerit import GingerIt
 
     parser = GingerIt()
-    return parser.parse(text)['result']
+    return "After correction :"+parser.parse(text)['result']
