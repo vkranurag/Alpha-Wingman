@@ -18,6 +18,19 @@ def speechtotext():
 def how_it_works():
     return render_template("howitworks.html")
 
+
+@views.route('/grammarcheck')
+def grammarcheck():
+    return render_template("grammarcheck.html")
+
+@views.route("/grammarcheck", methods=['GET', 'POST'])
+def streambyte():
+    # your file processing code is here...
+    text = request.form['text']
+    # your file processing code is here...
+
+    return render_template('grammarcheck.html', result = grammar(text))
+
 @views.route('/aboutus')
 def about_us():
     return render_template("aboutus.html")
@@ -164,3 +177,9 @@ def get_summary(link, length):
         elif (th >= 0.7) and (th <= 1):
             l2 += 0.1
       return final_summary
+
+def grammar(text):
+    from gingerit.gingerit import GingerIt
+
+    parser = GingerIt()
+    return parser.parse(text)['result']
