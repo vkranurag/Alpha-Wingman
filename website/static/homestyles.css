@@ -1,0 +1,151 @@
+*{
+    text-align:center;
+}
+h2 { font-family: Molengo; font-size: 50px; font-style: normal; font-variant: normal; font-weight: 500; line-height: 26.4px; } 
+h3 { font-family: Molengo; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; } 
+p { font-family: Molengo; font-size: 25px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 35.7143px; } 
+blockquote { font-family: Molengo; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; } 
+pre { font-family: Molengo; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.5714px; }
+
+/*Navigation bar start*/
+body {
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    background-color: #07244F;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    width: 100%;
+    padding: 8px 20px;
+    opacity: 0.8;
+    float: left;
+}
+.navbar a{
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    vertical-align: middle;
+}
+#navb a:hover{
+    color: #97a8c2;
+}
+.logo a{
+    font-size: 15px;
+    font-family: Minimal;
+    float: eight;
+    padding: 5px;
+    padding-right: 10px;
+    color: #94fefe;
+}
+#navb{
+    font-size: 15px;
+    font-family: Molengo;
+    float: right;
+    padding-right: 40px;
+}
+#intro h1{
+    color: white;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    font-family: Molengo;
+}
+/*Navigation bar end*/
+
+body,html{
+    margin:0px;
+    padding:0px;
+    background-color: #F4F8F9;
+}
+
+.icon img{
+    height: 100px;
+    width:100px;
+}
+
+.button {
+    filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+    background-color: #07244F; 
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: Molengo; font-size: 25px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 35.7143px;
+    border-radius: 30px;
+  }
+  
+
+.container-fluid {
+    color: white
+}
+
+.text-box{
+    width:90%;
+}
+
+header
+{
+    width:100%;
+    padding:0px;
+    float:left;
+    height:60px;
+    margin-top:0px;
+    background-color: #07244F;
+}
+
+h1
+{
+    position: absolute;
+    padding: 3px;
+    float: left;
+    margin-left: 2%;
+    margin-top: 10px;
+    font-family: Molengo;
+    color: #FFFFFF;
+}
+
+span
+{
+    color: #FFFFFF;
+}
+
+ul
+{
+    width: auto;
+    margin-top: 8px;
+    margin-left: 60%;
+}
+
+li
+{
+    display: inline-block;
+    padding: 15px 30px;
+}
+
+a
+{
+    text-align: center;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: Molengo;
+    font-size: 20px;
+}
+
+a:hover
+{
+    color: #F4F8F9;
+    transition: 0.5s;
+}
+
+/*icon image*/
+img{
+    width:100px;
+    float:100px;
+}

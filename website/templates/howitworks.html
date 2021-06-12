@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>Speed Reader</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='hiwstyles.css') }}">
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Molengo"/>
+    </head>
+    
+    <nav class="navbar">
+        <span id="navb"><a href="/">Home</a>
+        <a href="/howitworks" id='hiw'>How It Works</a>
+        <a href="/aboutus" id='aboutus'>About Us</a></span>
+        <img src="{{url_for('static', filename='logo_sr.png')}}" />
+    </nav>
+
+    <body>
+    <script type="text/javascript" src="{{ url_for('static', filename='howitworks.js') }}">
+    </script>
+    </body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title> Speed Reader</title>
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Molengo" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <link rel="stylesheet" href="{{ url_for('static', filename='homestyles.css') }}">
+    </head>
+    
+        <nav class="navbar">
+            <img style="width:250px;height:100%;"class = "icon" src="{{url_for('static', filename='logo_sr.png')}}" />
+            <span id="navb"><a href="/">Try It Out!</a>
+            <!--<a href="/howitworks" id='hiw'>How It Works</a>-->
+            <a href="/aboutus" id='aboutus'>About Us</a></span>        
+        </nav>
+
+    <body>
+        <div style="padding:100px" class="container">
+            <div class="row">
+              <div style="background-color:#F4F8F9;margin-top:80px"class="col-sm">
+                <img style="width:75px;height:135px;"class = "icon" src="{{url_for('static', filename='fileicon.svg')}}" />
+                <p>Summarize Articles, Speeches, and more!</p>
+                <p>Use our summarizer to quickly convert<br/> lengthy text into short, summarized text. <br/>Decrease text by up to 80%!</p>
+              </div>
+              <div style="margin-top:130px"class="col-sm">
+                <form action = "/results" method = "post">  
+                  <p>Text Link:</p>
+                  <p><input style="text-align:left;" class="text-box" type="text" name="link" id="length"/></p>
+                  <p style="float:left;"><input class="button" type="submit" name="link" value="Short Summary" id = "length"/></p>
+                  <p style="float:right;"><input class="button" type="submit" name="link" value="Long Summary" id="length"/></p>
+              </form> 
+              </div>
+            </div>
+          </div>
+
+          <div style="background:linear-gradient(180deg, #F4F8F9 44.19%, #07244F 95.33%);height:300px;margin-top:50px" class="container-fluid">
+            </div> 
+        </div>
+
+
+          <div style="background:#07244F;height:500px" class="container-fluid">
+            <h2 style="padding:100px">Meet The Masterminds</h2>
+            <div class="row">
+              <div class="col-sm">
+                <img class = "icon" src="{{url_for('static', filename='aisha-icon.svg')}}" />
+                <p>Aisha</p>
+                <p>Role: UI / UX</p>
+              </div>
+              <div class="col-sm">
+                <img class = "icon" src="{{url_for('static', filename='uwem-icon.svg')}}" />
+                <p>Uwem</p>
+                <p>Role: Front End / Back End</p>
+              </div>
+              <div class="col-sm">
+                <img class = "icon" src="{{url_for('static', filename='kania-icon.svg')}}" />
+                <p>Kania</p>
+                <p>Role: Front End</p>
+              </div>
+              <div class="col-sm">
+                <img class = "icon" src="{{url_for('static', filename='himanshu-icon.svg')}}" />
+                <p>Himanshu</p>
+                <p>Role: Machine Learning</p>
+              </div>
+            </div>
+          </div>
+          
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='index.js') }}">
+    </script>
+    </body>
+</html>
