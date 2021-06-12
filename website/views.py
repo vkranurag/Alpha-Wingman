@@ -10,6 +10,10 @@ def home():
 def summary():
     return render_template("index.html")
 
+@views.route('/stt')
+def speechtotext():
+    return render_template("speech-to-text.html")
+
 @views.route('/howitworks')
 def how_it_works():
     return render_template("howitworks.html")
