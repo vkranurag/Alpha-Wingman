@@ -2,8 +2,12 @@ from flask import Blueprint, render_template, request, redirect, flash
 import os
 views = Blueprint('views', __name__)
 
-@views.route('/summary')
+@views.route('/')
 def home():
+    return render_template("home.html")
+
+@views.route('/summary')
+def summary():
     return render_template("index.html")
 
 @views.route('/howitworks')
