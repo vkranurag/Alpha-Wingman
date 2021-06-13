@@ -574,11 +574,11 @@ function w() {
       switch (e.error) {
         case "aborted":
         case "no-speech":
-          t = C() ? "" : "🏁 Click the microphone to resume dictation";
+          t = C() ? "" : "🏁 Click the microphone to resume";
           break;
         case "network":
           t =
-            "👨🏼‍💻 Please ensure that your computer is connected to the Internet?";
+            "Please ensure that your computer is connected to the Internet";
           break;
         case "audio-capture":
           t =
@@ -588,11 +588,11 @@ function w() {
         case "service-not-allowed":
           $("a.nomic").click(),
             (t =
-              "Dication cannot use your microphone. Go to chrome://settings/content/microphone and allow access to the microphone");
+              "Text to speech cannot use your microphone. Go to microphone settings and allow access to the microphone");
           break;
         default:
           t =
-            "👨🏼‍💻 Please ensure that no other tab in your browser is using the microphone else Dictation may not work.";
+            "👨🏼‍💻 Please ensure that no other tab in your browser is using the microphone else Text-to-Speech may not work.";
       }
       L(t), j();
     }),
