@@ -743,19 +743,7 @@ function I() {
   )
     var t = 0,
       n = [
-        "\n",
-        "Hello! ",
-        "We have set your default language as ",
-        e,
-        "but you can easily change it from the language dropdown 👉 ",
-        "\n\n",
-        "Next, click the Start button to activate dictation. ",
-        "For assistance, ",
-        "please email amit@labnol.org",
-        " or tweet @labnol",
-        "\n\n",
-        "Thanks!",
-        "\n\n",
+        ""
       ],
       r = setInterval(function () {
         b(n[t++]), t === n.length && (clearInterval(r), (ne = !0));
