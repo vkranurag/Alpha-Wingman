@@ -78,10 +78,20 @@ The application provides three feature:
 
 ## Screenshots
 
+### Home Page
+
 <img    src="https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/563/749/datas/gallery.jpg">
+
+### Grammar Checker
 <img    src="https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/563/750/datas/gallery.jpg">
+
+### Summarizer
 <img    src="https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/563/751/datas/gallery.jpg">
+
+### Speech-To-Text Editor
 <img    src="https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/564/049/datas/gallery.jpg">
+
+### Feature Page
 <img    src="https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/563/753/datas/gallery.jpg">
   
 
