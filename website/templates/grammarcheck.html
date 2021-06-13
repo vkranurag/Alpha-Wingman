@@ -36,7 +36,8 @@
       }
     textarea
     {
-	width: 500px;	
+	width: 1000px;	
+    height:250px;
 	border: none;
 	border-radius: 20px;
 	outline: none;
@@ -52,6 +53,7 @@
 	-webkit-box-sizing:border-box;
 	-moz-box-sizing:border-box;
 	box-sizing:border-box;
+    overflow: hidden;
 	
     }
     textarea:focus
@@ -98,13 +100,24 @@
         
     <form method=post enctype=multipart/form-data >
     
-    <textarea name="text" placeholder="Type your text..."></textarea>
-    <br>
+    <textarea name="text" placeholder="Type your text..." id="textarea"></textarea>
+    <br><br>
     <input class="btn btn-primary" type="submit" value="Check">
     </form><br>
-    <p>{{ result }}</p>
+    <h2 style="color:black;text-align:center" id="correctedtext"></h2>  
+    <p style="margin:50px">{{ result }}</p>
+    
 
     </div>
+    <script type="text/javascript">
+
+    let el = document.getElementById(`textarea`);
+    el.addEventListener("input", function() {
+    if (el.scrollTop != 0)
+        el.style.height = el.scrollHeight + "px";
+    });
+    
+    </script>
 
 
 <!-- this is where is need my data -->
