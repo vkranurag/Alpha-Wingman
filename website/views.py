@@ -174,4 +174,4 @@ def grammar(text):
     from gingerit.gingerit import GingerIt
 
     parser = GingerIt()
-    return "After correction :"+parser.parse(text)['result']
+    return "After correction: "+parser.parse(text)['result']
