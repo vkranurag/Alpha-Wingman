@@ -1,12 +1,6 @@
 
-
-<!-- PROJECT LOGO -->
-<br />
 <p align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
-
+  
   <h3 align="center">Alpha-Wingman</h3>
 
   <p align="center">
@@ -87,7 +81,7 @@ The application provides three feature:
 <img    src="https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/563/749/datas/gallery.jpg">
 <img    src="https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/563/750/datas/gallery.jpg">
 <img    src="https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/563/751/datas/gallery.jpg">
-<img    src="https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/563/752/datas/gallery.jpg">
+<img    src="https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/564/049/datas/gallery.jpg">
 <img    src="https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/563/753/datas/gallery.jpg">
   
 
