@@ -72,9 +72,12 @@ To get a local copy up and running follow these simple example steps.
  - `python main.py`
 
 The application provides three feature:
-* Summarizer -Which provides two options a short summary or a long summary of the article link provided.
-* Speech to Text converter -Which converts the speech into text and also an in built editor is available which provides features such as changing the font style,size and colour.
-* Grammar checker -Which can be used to check the grammatical errors in the text that is provided.
+### Summarizer
+Provides two options a short summary or a long summary of the article link provided.
+### Speech to Text converter
+Converts the speech into text and also an in built editor is available which provides features such as changing the font style,size and colour.
+### Grammar checker
+Check the grammatical errors in the text that is provided.
 
 ## Screenshots
 
