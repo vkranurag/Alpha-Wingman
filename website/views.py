@@ -20,10 +20,7 @@ def grammarcheck():
 
 @views.route("/grammarcheck", methods=['GET', 'POST'])
 def streambyte():
-    # your file processing code is here...
     text = request.form['text']
-    # your file processing code is here...
-
     return render_template('grammarcheck.html', result = grammar(text))
 
 
@@ -174,4 +171,4 @@ def grammar(text):
     from gingerit.gingerit import GingerIt
 
     parser = GingerIt()
-    return "After correction: "+parser.parse(text)['result']
+    return parser.parse(text)['result']

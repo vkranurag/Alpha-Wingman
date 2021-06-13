@@ -23,6 +23,9 @@
   <!-- Template Main CSS File -->
   <link href="{{ url_for('static', filename='assets/css/style2.css') }}" rel="stylesheet">
   <style>
+      body {
+            background: #4a90e2;
+      }
       .content 
       {
         max-height: 100%;
@@ -61,10 +64,16 @@
 	border: solid 3px #77bde0;	
     }
 
+    .result {
+        background:white;
+        max-width:1000px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;        
+        border-radius:15px;
+    }
   </style>
 
 </head>
-<body>
+<body bgcolor="#4a90e2">
         <!-- ======= Header ======= -->
         <header id="header" class="fixed-top d-flex align-items-center  header-transparent ">
             <div class="container d-flex align-items-center justify-content-between">
@@ -102,10 +111,12 @@
     
     <textarea name="text" placeholder="Type your text..." id="textarea"></textarea>
     <br><br>
-    <input class="btn btn-primary" type="submit" value="Check">
+    <input class="btn btn-success" type="submit" value="Check">
     </form><br>
-    <h2 style="color:black;text-align:center" id="correctedtext"></h2>  
-    <p style="margin:50px">{{ result }}</p>
+    <!-- <h2 style="color:black;text-align:center" id="correctedtext"></h2>   -->
+    <div class="result">
+        <p style="margin:50px">{{ result }}</p>
+    </div>
     
 
     </div>
@@ -113,6 +124,11 @@
 
     let el = document.getElementById(`textarea`);
     el.addEventListener("input", function() {
+    if (el.scrollTop != 0)
+        el.style.height = el.scrollHeight + "px";
+    });
+    let el = document.getElementsByName(`result`);
+    el.addEventListener("p", function() {
     if (el.scrollTop != 0)
         el.style.height = el.scrollHeight + "px";
     });
