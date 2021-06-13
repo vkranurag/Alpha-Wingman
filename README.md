@@ -1,13 +1,11 @@
 
 ## Table of Contents
 
--  [About the Project](#about-the-project)
+-  [Why this project](#about-the-project)
 
 -  [Built With](#built-with)
 
 -  [Getting Started](#getting-started-as-contributor)
-
--  [Prerequisites](#prerequisites)
 
 -  [Installation](#installation)
 
@@ -16,9 +14,9 @@
   
   
 
-## About The Project
+### Why this project
 
-  
+During this tough times when all the classes are online students have found it hard to visit multiple websites to complete an assignment that involves summarizing, grammar checker, etc. Hence, we came up with the idea to assemble all of the required tools into a single page.Currently our application provides tools like a summarizer, speech to text converter, and a grammar checker.
   
 
 ### Built With  
@@ -27,7 +25,7 @@
 -  HTML, CSS, JavaScript
 -  NLTK, GingerIt
 
-## Getting Started as Contributor  
+### Getting Started as Contributor  
 
 To get a local copy up and running follow these simple steps.
 
@@ -40,12 +38,17 @@ To get a local copy up and running follow these simple steps.
  - Run the application
  - `python main.py`
 
-## Screenshots
+### Screenshots
 
+<img    src="https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/563/749/datas/gallery.jpg">
+<img    src="https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/563/750/datas/gallery.jpg">
+<img    src="https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/563/751/datas/gallery.jpg">
+<img    src="https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/563/752/datas/gallery.jpg">
+<img    src="https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/563/753/datas/gallery.jpg">
   
   
 
-## Admins
+### Admins
 
 Important decisions regarding the project are taken by the following maintainers.
 
