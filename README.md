@@ -78,9 +78,9 @@ To get a local copy up and running follow these simple example steps.
  - `python main.py`
 
 The application provides three feature:
- -Summarizer
- -Text to Speech converter
- -Grammar checker
+-Summarizer
+-Text to Speech converter
+-Grammar checker
 
 ## Screenshots
 
