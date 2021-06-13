@@ -1,4 +1,4 @@
-from flask import Blueprint, render_template, request, redirect, flash
+from flask import Blueprint, render_template, request, redirect, flash,Flask
 import os
 views = Blueprint('views', __name__)
 
@@ -46,8 +46,8 @@ def get_summary(link, length):
     import nltk
     from nltk.corpus import stopwords
     from nltk.tokenize import word_tokenize, sent_tokenize
-    nltk.download('stopwords')
-    nltk.download('punkt')
+    nltk.download('stopwords','nltk_data')
+    nltk.download('punkt','nltk_data')
     import bs4 as bs
     import urllib.request
     import re
